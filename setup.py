@@ -15,6 +15,7 @@ extras_require = {
     "digitalocean": ["python-digitalocean>=1.15.0"],
     "gcp": ["google-api-python-client>=1.12.5", "google-auth>=1.23.0"],
     "hetzner": ["hcloud>=1.10.0"],
+    "fly": ["httpx>=0.24.0", "pydantic>=1.10.7"],
     "ibm": ["ibm_code_engine_sdk>=3.1.0"],
     "openstack": ["openstacksdk>=3.3.0"],
     "nebius": ["nebius>=0.2.0"],

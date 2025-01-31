@@ -121,6 +121,16 @@ cloudprovider:
     docker_image: "daskdev/dask:latest" # docker image to use
     bootstrap: true # It is assumed that the OS image does not have Docker and needs bootstrapping. Set this to false if using a custom image with Docker already installed.
 
+  fly:
+    token: null # API token for interacting with the Fly API
+    region: "lax" # Region to launch Droplets in
+    vm_size: "shared-cpu-1x" # Droplet size to launch, default is 1GB RAM, 1 vCPU
+    image: "ghcr.io/dask/dask:latest" # Operating System image to use
+    memory_mb: 1024 # Memory in MB to use for the scheduler and workers
+    cpus: 1 # Number of CPUs to use for the scheduler and workers
+    app_name: null # Name of Fly app to use. If it is blank, a random name will be generated.
+    org_slug: "personal" # Organization slug to use. If it is blank, the personal organization will be used.
+    
   ibm:
     api_key: null
     image: "ghcr.io/dask/dask:latest"

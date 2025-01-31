@@ -97,6 +97,7 @@ It can be used on any cluster that has workers running on Azure VMs, not just on
 
     aws.rst
     digitalocean.rst
+    fly.rst
     gcp.rst
     azure.rst
     hetzner.rst
